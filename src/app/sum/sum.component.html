@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+
+  <label for="firstValue">
+    First value:
+    <input type="number" id="firstValue" formControlName="firstValue">
+  </label>
+
+  <label for="secondValue">
+    Second value:
+    <input type="number" id="secondValue" formControlName="secondValue">
+  </label>
+
+  <button (click)="calculateSum()" id="sumButton">Calculate summary</button>
+
+  <br>
+
+  <h2>Summary result is: <span id="summary">{{result}}</span></h2>
+</form>
